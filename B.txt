@@ -1,0 +1,5 @@
+ 1 : for..of allows the use of (break , continue) to control the flow of the loop ,in forEach you cant use them
+ 2 : hoisting is moving function and variable declarations to the top ,TDZ causes ReferenceError when trying to access let or const before initializing
+ 3:(==) loose equality perform type coercion to compare the values ,while (===) strictly compares the values and the type
+ 4:the catch block catches any error thrown in the try block , its important in the async operations because any promise can be rejected 
+ 5:type convercion is explicit using functions like Number() , type  coercion is performed by javascript in operations like (+) for strings and (-,/,*,%) for numbers

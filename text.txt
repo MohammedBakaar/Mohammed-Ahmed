@@ -1,0 +1,12 @@
+1:event loop catches async operations from event  queue after excute them 
+2:libuv is c++  library it is responseble about async operations and accessing the hardware
+3: when async operation occures nodejs hands it to the libuv once finished libuv return the callback to the event queue 
+then the event loop picks it up after completing the sync code   
+4:
+call stack:executes synchronous code line by line
+event queue:line waiting area for completed async callbacks
+event loop: catches async operations from event  queue after excute them 
+5: thread pool is collection of threads provided by libuv to handle async operations
+export UV_THREADPOOL_SIZE=8
+6:blocking: code executes sequentially every operation waits for the previous operation
+non blocking : code runs sepratly in the thread pool and the next line of code will be excuted
